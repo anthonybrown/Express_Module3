@@ -49,8 +49,8 @@
       		});
    
       		// generic so any View will work 
-      		app.get('/:viewname', function (req, res) {
-        		res.render(req.params.viewname);
+      		app.get('/:anyname', function (req, res) {
+        		res.render(req.params.anyname);
       		});
     
       		app.listen(3000);

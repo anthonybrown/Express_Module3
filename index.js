@@ -18,9 +18,9 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/:viewname', function (req, res) {
+app.get('/:anyname', function (req, res) {
   'use strict';
-  res.render(req.params.viewname);
+  res.render(req.params.anyname);
 });
 
 app.listen(3000);
