@@ -30,35 +30,24 @@
   -  http://jade-lang.com
   -  visionmedia at github.com
 ### Some Code
-    var express = require('express')
-      , path    = require('path');
+      var express = require('express')
+        , path    = require('path');
     
-    var app = express();
+      var app = express();
   
-    app.configure( function () {
-      app.set('view engine', 'jade');
-      app.set('views', __dirname + '/views');
-      app.use(express.static(path.join(__dirname, 'public')));
-    });
+      app.configure( function () {
+        app.set('view engine', 'jade');
+        app.set('views', __dirname + '/views');
+        app.use(express.static(path.join(__dirname, 'public')));
+      });
     
-    app.get('/', function (req, res) {
-      res.render('empty');
-    });
+      app.get('/', function (req, res) {
+        res.render('empty');
+      });
    
-    // generic so any View will work 
-    app.get('/:viewname', function (req, res) {
-      res.render(req.params.viewname);
-    });
+      // generic so any View will work 
+      app.get('/:viewname', function (req, res) {
+        res.render(req.params.viewname);
+      });
     
-    app.listen(3000);
-
-
-
-
-
-
-
-
-
-
-
+      app.listen(3000);
