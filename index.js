@@ -9,7 +9,18 @@ app.configure( function () {
   'use strict';
   app.set('view engine', 'jade');
   app.set('views', __dirname + '/views');
-  app.use(express.static(__dirname, 'public')));
+  app.use(express.static(path.join(__dirname, 'public')));
+});
+
+app.get('/', function (req, res) {
+  'use strict';
+  res.render('empty');
+});
+
+
+app.get('/:viewname', function (req, res) {
+  'use strict';
+  res.render(req.params.viewname);
 });
 
 app.listen(3000);
