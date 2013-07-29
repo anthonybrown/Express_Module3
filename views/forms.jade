@@ -1,0 +1,79 @@
+!!!
+html(lang='en')
+  head
+    title Forms
+    style
+      body {
+        width: 80%;
+        margin: 30px auto 0;
+        color: #777;
+      }
+      h1, h2, h3, h4 {
+        color: #999;
+        text-shadow: 1px 2px 0 #555;
+      }
+  body
+    p
+      | When you need to start somthing on a new line
+    p
+      | you need to add another p tag
+
+    <br /><br />
+
+    form(method='POST', action='/')
+    table
+      tr
+        td
+          label(for='name') Name
+        td
+          input(name='name', id='name')
+      tr
+        td
+          label(for='email') Email
+        td
+          input(type='email', id='email')
+      tr
+        td
+          label(for='password') Password
+        td
+          input(type='password', id='password') 
+      tr
+        td
+          label(for='confirm') Confirm
+        td
+          input(type='password', id='confirm')
+      tr
+        td
+          label(for='type') Role Type
+        td
+          select(name='type')
+            option(value='dev') Developer
+            option(value='des') Designer
+            option(value='manager') Manager
+            option(value='desk') Desk Support
+            option(value='qa') Tester 
+
+       tr
+         td
+           label(for='signup') Available?
+         td
+           input(
+              type='checkbox'
+              id='available'
+              checked= 'checked'
+           )
+         td 
+           label(for'signup') Unavailable?
+         td
+           input(
+              type='checkbox'
+              id='unavailable'
+           )
+       tr
+         td
+           &nbsp;&nbsp;
+         td
+           &nbsp;&nbsp;
+            
+       
+    input(type='submit', value='Create')
