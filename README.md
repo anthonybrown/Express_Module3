@@ -15,3 +15,17 @@
 -  Embedding JavaScript in Views
 
 -  Using Blocks for layout
+
+##Views in Express
+-  User interface
+
+-  Based on Templates
+
+-  Support for multiple View Engines
+  -  Jade
+  -  EJS
+  -  JSHtml
+  -  ...
+- Default is Jade
+  -  http://jade-lang.com
+  -  visionmedia at github.com
