@@ -54,3 +54,6 @@
       		});
     
       		app.listen(3000);
+
+Adding some inline script we can do it all with Jade and Stylus
+working together with Express.
