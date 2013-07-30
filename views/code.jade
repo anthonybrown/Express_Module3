@@ -1,11 +1,7 @@
-!!!
-html(lang='en')
-  head
-    title Scripts in Jade.
-    link(rel='stylesheet', href='styles/style.css')
-    script(src='/scripts/utils.js')
-  body
-    #wrap
+extends layout
+
+block content
+
       h1 we can inline code with jade 
       p
         | We can set some variables to test if we are in development or production mode

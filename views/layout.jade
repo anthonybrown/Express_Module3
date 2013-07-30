@@ -3,38 +3,40 @@ html(lang='en')
   head
     title Layout Page 
     link(rel='stylesheet', href='styles/style.css')
-    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script(src="http://modernizr.com/downloads/modernizr-latest.js")
   body
     #wrap
       header
         #nav
           ul#main-nav
             li
-              a#current(href='#') Home
+              a#current(href='/') Home
             li
-              a(href='#') Work
+              a(href='#') work
               ul
                 li
-                  a(href='#') JS
+                  a(href='/home') JS
                 li
-                  a(href='#') PHP
+                  a(href='/element') PHP
                 li
-                  a(href='#') Ruby
+                  a(href='/forms') Ruby
                 li
-                  a(href='#') Design
+                  a(href='/more') Design
                 li
-                  a(href'#') UX
+                  a(href'/script') UX
                 li
-                  a(href='#') IA
+                  a(href='/test') IA
                 li
-                  a(href='#') UI
+                  a(href='/stuff') UI
             li
-              a(href='#') About
+              a(href='/about') About
             li
-              a(href='#') Contact
+              a(href='/code') code
       #main-section
         h1 Main Section 
         p
           | content will be loaded via extends layout
           | from any other jade template file
+        
         block content
