@@ -1,3 +1,15 @@
+
+::-moz-selection {
+  background-color: firebrick;
+  text-shadow: none;
+  color: white;
+}
+::selection {
+  background-color: firebrick;
+  text-shadow: none;
+  color: white;
+}
+
 html {
   font-size: 100%;
   margin: 0;
@@ -20,7 +32,7 @@ footer {
   height: 133px;
   background-color: #383838;
   text-align: center;
-  line-height: 2em;
+  line-height: 1.7em;
   color: #e7e7e7;
   position: fixed;
   left: 0;

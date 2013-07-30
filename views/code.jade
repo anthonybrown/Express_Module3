@@ -1,0 +1,34 @@
+!!!
+html(lang='en')
+  head
+    title Scripts in Jade.
+    link(rel='stylesheet', href='styles/style.css')
+    script(src='/scripts/utils.js')
+  body
+    #wrap
+      h1 we can inline code with jade 
+      p
+        | We can set some variables to test if we are in development or production mode
+
+      - var env = 'dev';
+
+      - if (env == 'dev') {
+          p we are in dev environment
+      - } else {
+          p we are in production environment
+      - }
+      p
+        | above we are responding with `we are in dev environment`
+      P
+        | because that is the environment we are in, remember earlier?
+        | we can set our environment in the terminal with NODE_ENV=production 
+      <br />
+
+      h2 Modern web development with Nodejs and Express.
+      <br />
+
+    footer
+      p
+        | This combination rocks my dev world!
+      p No Doubt about it
+      p The most fun framework for Node.
