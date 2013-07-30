@@ -1,0 +1,40 @@
+!!!
+html(lang='en')
+  head
+    title Layout Page 
+    link(rel='stylesheet', href='styles/style.css')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
+  body
+    #wrap
+      header
+        #nav
+          ul#main-nav
+            li
+              a#current(href='#') Home
+            li
+              a(href='#') Work
+              ul
+                li
+                  a(href='#') JS
+                li
+                  a(href='#') PHP
+                li
+                  a(href='#') Ruby
+                li
+                  a(href='#') Design
+                li
+                  a(href'#') UX
+                li
+                  a(href='#') IA
+                li
+                  a(href='#') UI
+            li
+              a(href='#') About
+            li
+              a(href='#') Contact
+      #main-section
+        h1 Main Section 
+        p
+          | content will be loaded via extends layout
+          | from any other jade template file
+        block content

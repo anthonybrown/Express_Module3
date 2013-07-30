@@ -9,6 +9,8 @@ app.configure( function () {
   'use strict';
   app.set('view engine', 'jade');
   app.set('views', __dirname + '/views');
+  app.use(express.logger('dev'));
+  app.use(express.favicon());
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
