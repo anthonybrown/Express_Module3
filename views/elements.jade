@@ -2,27 +2,33 @@
 html(lang='en')
   head
     title With Header and Sections
+    link(href='styles/style.css', rel='stylesheet')
   body
-    h1 Jade View Engine
-    p
-      | The Jade view engine is my favorite and it's aimed at minimalizing the amount of characters
-      | we need to type in order to get HTML outputted to the screen.
-    h2 Jade Rocks
+    #wrap
+      h1 Jade View Engine
+      p
+        | The Jade view engine is my favorite and it's aimed at minimalizing the amount of characters
+        | we need to type in order to get HTML outputted to the screen.
+      h2 Jade Rocks
 
-    #elements Apart from paragraphs it also supports containers
+      #elements Apart from paragraphs it also supports containers
 
-    #other_elements
-      | In fact we don't even need to use the div prefix for it to work
-    .items Classes work just fine!
+      #other_elements
+        | In fact we don't even need to use the div prefix for it to work
+      .items Classes work just fine!
      
-      | Even things like lists, et al
-      ul
-        li First item
-        li Second item
-        li Third item
-        li Fourth item
-      p
-      p
-        a(href='http://google.com') links can also be added
-      p And even use in context as in
-            a(href='http://google.com')  this example here.
+        | Even things like lists, et al
+        ul
+          li First item
+          li Second item
+          li Third item
+          li Fourth item
+        p
+        p
+          a(href='http://google.com') links can also be added
+        p And even use in context as in
+          a(href='http://google.com')  this example here.
+
+      footer
+        p
+          | Copyright 2014 &copy; Tony Brown Developer

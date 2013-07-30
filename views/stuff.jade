@@ -2,37 +2,33 @@
 html(lang='en')
   head
     title With Header and Sections
-    style
-      body {
-        width: 80%;
-        margin: 40px auto 0;
-        color: #777;
-      }
-      h1, h2, h3, h4, h5 {
-        color: #999;
-        text-shadow: 1px 2px 1px #777;
-      }
+    link(rel='stylesheet', href='styles/style.css')
   body
-    h1 Stuff
-    p
-      | Stuff is alwas fun, and if you mix Jade and Express with Stuff 
-      | We get amazing stuff 
-    h2 Jade Rocks \m/
+    #wrap
+      h1 Stuff
+      p
+        | Stuff is alwas fun, and if you mix Jade and Express with Stuff 
+        | We get amazing stuff 
+      h2 Jade Rocks \m/
 
-    #elements Apart from paragraphs it also supports containers
+      #elements Apart from paragraphs it also supports containers
 
-    #other_elements
-      | In fact we don't even need to use the div prefix for it to work
-    .items Classes work just fine!
+      #other_elements
+        | In fact we don't even need to use the div prefix for it to work
+      .items Classes work just fine!
      
-      | Even things like lists, et al
-      ul
-        li First item
-        li Second item
-        li Third item
-        li Fourth item
-      p
-      p
-        a(href='http://google.com') links can also be added
-      p And even use in context as in
-            a(href='http://google.com')  this example here.
+        | Even things like lists, et al
+        ul
+          li First item
+          li Second item
+          li Third item
+          li Fourth item
+        p
+        p
+          a(href='http://google.com') links can also be added
+        p And even use in context as in
+          a(href='http://google.com')  this example here.
+    
+      footer
+        p
+          | Copyright 2014 &copy; Tony Brown Developer

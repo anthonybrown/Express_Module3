@@ -1,33 +1,30 @@
 !!!
 html(lang='en')
   head
-    title Scripts in Jade 
-    style
-      body {
-          width: 80%;
-          margin: 0 auto;
-          color: #555;
-        }
+    title Scripts in Jade.
+    link(rel='stylesheet', href='styles/style.css')
     script(src='/scripts/utils.js')
   body
-    h1 using scripts in our jade views
-    #output
-    script
-      write("<h1>This is the write function, who are you?</h1>")
-    p
-      | we can work with scripts on the same page, inline scripts 
-    p or
-    p we can have our files sourced to a directory somewhere
-    #message
-    h2 JavaScript love here 
-    <br />
-    script
-      message("<h2>this is the message function</h2>")
+    #wrap
+      h1 using scripts in our jade views
+      #output
+      script
+        write("<h1>This is the write function, who are you?</h1>")
+      p
+        | we can work with scripts on the same page, inline scripts 
+      p or
+      p we can have our files sourced to a directory somewhere
+      #message
+      h2 JavaScript love here 
+      <br />
+      script
+        message("<h2>this is the message function</h2>")
    
-   h2 Modern web development with Nodejs and Express.
-   <br />
-     
-  p
-    | This combination rocks my dev world!
-  p No Doubt about it
-  p The most fun framework for Node.
+      h2 Modern web development with Nodejs and Express.
+      <br />
+
+    footer
+      p
+        | This combination rocks my dev world!
+      p No Doubt about it
+      p The most fun framework for Node.
