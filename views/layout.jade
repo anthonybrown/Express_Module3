@@ -47,5 +47,28 @@ html(lang='en')
         p
           | content will be loaded via extends layout
           | from any other jade template file
+
+        script
+          (function($) {
+            // cache the nav
+            var nav = $("#nav");
+
+            nav.find('li').each(function() {
+              if ($(this).find('ul').length > 0) {
+
+                $('<span>').text("^").appendTo($(this).children(':first'));
+
+                  //show subnav on hover
+                    $(this).mouseenter(function () {
+                    $(this).find('ul').stop(true, true).slideDown();
+                  });
+
+                  // hide submenus on exit
+                  $(this).mouseleave(function(){
+                    $(this).find('ul').stop(true, true).slideUp();
+                  });
+                }
+            });
+          })(jQuery);
         
         block content
