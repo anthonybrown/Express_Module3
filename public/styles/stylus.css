@@ -1,0 +1,14 @@
+#stylus {
+  color: #bf9f77;
+  font-family: Georgia;
+  font-size: larger;
+  font-style: italic;
+  width: 50%;
+}
+#box {
+  border-color: #000;
+  border-style: dotted;
+  background-color: #bbb;
+  color: #333;
+  padding: 1em;
+}
