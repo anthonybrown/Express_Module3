@@ -9,6 +9,7 @@ app.configure( function () {
   'use strict';
   app.set('view engine', 'jade');
   app.set('views', __dirname + '/views');
+  app.use(require('stylus').middleware(__dirname + '/public'));
   app.use(express.logger('dev'));
   app.use(express.favicon());
   app.use(express.static(path.join(__dirname, 'public')));
@@ -16,7 +17,7 @@ app.configure( function () {
 
 app.get('/', function (req, res) {
   'use strict';
-  res.render('empty');
+  res.render('index');
 });
 
 
