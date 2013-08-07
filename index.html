@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Express module3-dropdown : demo of express and my dropdown menu" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Express module3-dropdown</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/anthonybrown/Express_Module3-dropdown">View on GitHub</a>
+
+          <h1 id="project_title">Express module3-dropdown</h1>
+          <h2 id="project_tagline">demo of express and my dropdown menu</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/anthonybrown/Express_Module3-dropdown/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/anthonybrown/Express_Module3-dropdown/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="module-3" class="anchor" href="#module-3"><span class="octicon octicon-link"></span></a>Module 3</h1>
+
+<blockquote>
+<p>we continue with views in Express</p>
+
+<p>HTML elements and Jade View Engine</p>
+
+<p>Web development with Express is awesome!</p>
+</blockquote>
+
+<h2>
+<a name="some-things-of-interest" class="anchor" href="#some-things-of-interest"><span class="octicon octicon-link"></span></a>some things of interest</h2>
+
+<ul>
+<li><p>Views in Express</p></li>
+<li><p>Jade View Engine</p></li>
+<li><p>HTML Elements</p></li>
+<li><p>Embedding JavaScript in Views</p></li>
+<li><p>Using Blocks for layout</p></li>
+</ul><h2>
+<a name="views-in-express" class="anchor" href="#views-in-express"><span class="octicon octicon-link"></span></a>Views in Express</h2>
+
+<ul>
+<li><p>User interface</p></li>
+<li><p>Based on Templates</p></li>
+<li>
+<p>Support for multiple View Engines</p>
+
+<ul>
+<li> Jade</li>
+<li> EJS</li>
+<li> JSHtml</li>
+<li> ...</li>
+</ul>
+</li>
+<li>
+<p>Default is Jade</p>
+
+<ul>
+<li> <a href="http://jade-lang.com">http://jade-lang.com</a>
+</li>
+<li> visionmedia at github.com</li>
+</ul>
+</li>
+</ul><h3>
+<a name="some-code" class="anchor" href="#some-code"><span class="octicon octicon-link"></span></a>Some Code</h3>
+
+<pre><code>        var express = require('express')
+            , path    = require('path');
+
+        var app = express();
+
+        app.configure( function () {
+            app.set('view engine', 'jade');
+            app.set('views', __dirname + '/views');
+            app.use(express.static(path.join(__dirname, 'public')));
+        });
+
+        app.get('/', function (req, res) {
+            res.render('empty');
+        });
+
+        // generic so any View will work 
+        app.get('/:anyname', function (req, res) {
+            res.render(req.params.anyname);
+        });
+
+        app.listen(3000);
+</code></pre>
+
+<p>Adding some inline script we can do it all with Jade and Stylus
+working together with Express.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Express module3-dropdown maintained by <a href="https://github.com/anthonybrown">anthonybrown</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
