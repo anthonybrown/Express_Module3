@@ -1,6 +1,6 @@
 # Module 3
 
-#### contains my dropdown menu that is quite handsome if I do say so myself
+#### contains my dropdown menu which is quite handsome if I do say so myself
 > we continue with views in Express
 
 > HTML elements and Jade View Engine
